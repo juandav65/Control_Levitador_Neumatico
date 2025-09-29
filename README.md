@@ -51,13 +51,14 @@ El modelo dinámico se implementó en **Simulink**, considerando saturación y c
 ### PID
 - Se aplicó un **control proporcional** inicial para encontrar un punto de equilibrio.  
 - Posteriormente se ajustó un **PID** mediante el método empírico de Åström y Hägglund.  
-- Resultados: sobreimpulso ≈ 20% y tiempo de asentamiento ≈ 15 s.  
+- Resultados: sobrepico ≈ 20% y tiempo de asentamiento ≈ 15 s.  
 
 ### Linealización
 - Se obtuvo un modelo linealizado en torno al punto de equilibrio $u_{eq} = 5.325 \, V$.  
 - Matrices del sistema:
 
-     ```text A = [  0        1      ;
+
+     A = [  0        1      ;
      -0.9884  -3.9537 ]
 
 
@@ -76,7 +77,7 @@ B = [ 0 ;
 ##  Implementación
 - El control fue implementado en la planta con una **ESP32** programada en el **IDE de Arduino**.  
 - Comunicación serial para cambios de referencia en tiempo real.  
-- Carpeta con demostraciones: [Drive](https://drive.google.com/drive/folders/1l6yZ6H65sgnCWVqWfYoXpBIZgMuJCxzs?usp=sharing).  
+  
 
 ---
 
@@ -85,10 +86,4 @@ B = [ 0 ;
 - Se identificó la necesidad de incluir fenómenos no lineales y retardos del actuador en versiones futuras.  
 - El controlador H∞ mostró un desempeño robusto, aunque requirió ajustes prácticos en la implementación física.  
 
----
 
-##  Contenido del repositorio
-- `/docs` → Informe y diagramas.  
-- `/simulink` → Modelos en Simulink.  
-- `/arduino` → Código para ESP32.  
-- `/results` → Resultados experimentales y comparaciones.  
