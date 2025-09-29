@@ -57,9 +57,9 @@ El modelo dinámico se implementó en **Simulink**, considerando saturación y c
 - Se obtuvo un modelo linealizado en torno al punto de equilibrio $u_{eq} = 5.325 \, V$.  
 - Matrices del sistema:
 
-     ```text
-A = [  0        1      ;
+     ```text A = [  0        1      ;
      -0.9884  -3.9537 ]
+
 
 B = [ 0 ;
       3.2565 ]
