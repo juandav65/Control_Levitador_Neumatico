@@ -11,18 +11,18 @@ Autores:
 
 ---
 
-## 📌 Descripción
+##  Descripción
 Este proyecto implementa el diseño, modelado y control de una planta experimental consistente en un pistón suspendido dentro de un tubo de aire. El objetivo principal fue **desarrollar y validar modelos matemáticos y de simulación**, y posteriormente diseñar controladores (**PID y H∞**) para estabilizar la posición del pistón.
 
 ---
 
-## ⚙️ Diseño y montaje de la planta
+##  Diseño y montaje de la planta
 - **Pistón**: diseñado para minimizar oscilaciones dentro del tubo y maximizar el área de contacto con el flujo de aire.  
 - **Tubo**: acrílico transparente de 20 mm de diámetro para visualizar el movimiento del pistón.  
 
 ---
 
-## 📐 Modelamiento de la planta
+##  Modelamiento de la planta
 Se utilizó un modelo basado en la fuerza de arrastre (**drag**) sobre el pistón:
 
 $$
@@ -40,14 +40,14 @@ El modelo dinámico se implementó en **Simulink**, considerando saturación y c
 
 ---
 
-## 🧪 Validación del modelo
+##  Validación del modelo
 - Se aplicó una señal de pulsos periódica al ventilador.  
 - Se comparó la respuesta simulada con la planta real.  
 - El modelo predijo adecuadamente la altura alcanzada, pero no capturó las oscilaciones observadas en la planta física (fenómenos no modelados como turbulencias o retardos).  
 
 ---
 
-## 🎛️ Diseño de control
+##  Diseño de control
 ### PID
 - Se aplicó un **control proporcional** inicial para encontrar un punto de equilibrio.  
 - Posteriormente se ajustó un **PID** mediante el método empírico de Åström y Hägglund.  
@@ -62,7 +62,7 @@ A = \begin{bmatrix} 0 & 1 \\ -0.9884 & -3.9537 \end{bmatrix}, \quad
 B = \begin{bmatrix} 0 \\ 3.2565 \end{bmatrix}
 $$
 
-### Control H∞
+### Control Hinf
 - Se diseñaron filtros de sensibilidad $W1, W2, W3$.  
 - Se logró un buen desempeño en simulación, aunque en la planta física se requirió:  
   - Ajustar la ganancia global.  
@@ -70,21 +70,21 @@ $$
 
 ---
 
-## 💻 Implementación
+##  Implementación
 - El control fue implementado en la planta con una **ESP32** programada en el **IDE de Arduino**.  
 - Comunicación serial para cambios de referencia en tiempo real.  
 - Carpeta con demostraciones: [Drive](https://drive.google.com/drive/folders/1l6yZ6H65sgnCWVqWfYoXpBIZgMuJCxzs?usp=sharing).  
 
 ---
 
-## ✅ Conclusiones
+##  Conclusiones
 - El modelo matemático reproduce con buena aproximación el comportamiento de la planta en su rango operativo.  
 - Se identificó la necesidad de incluir fenómenos no lineales y retardos del actuador en versiones futuras.  
 - El controlador H∞ mostró un desempeño robusto, aunque requirió ajustes prácticos en la implementación física.  
 
 ---
 
-## 📂 Contenido del repositorio
+##  Contenido del repositorio
 - `/docs` → Informe y diagramas.  
 - `/simulink` → Modelos en Simulink.  
 - `/arduino` → Código para ESP32.  
