@@ -52,7 +52,7 @@ El modelo dinámico se implementó en **Simulink**, considerando saturación y c
 - Se aplicó un **control proporcional** inicial para encontrar un punto de equilibrio.  
 - Posteriormente se ajustó un **PID** mediante el método empírico de Åström y Hägglund.  
 - Resultados: sobrepico ≈ 20% y tiempo de asentamiento ≈ 15 s.
-
+<img width="905" height="682" alt="image" src="https://github.com/user-attachments/assets/c84925c5-5539-4e4a-bc86-0d385b431b4b" />
 
 ### Linealización
 - Se obtuvo un modelo linealizado en torno al punto de equilibrio $u_{eq} = 5.325 \, V$.  
@@ -72,7 +72,12 @@ B = [ 0 ;
 - Se logró un buen desempeño en simulación, aunque en la planta física se requirió:  
   - Ajustar la ganancia global.  
   - Aplicar un **offset** de 5.16 V en la señal de control.  
-<img width="905" height="682" alt="image" src="https://github.com/user-attachments/assets/c84925c5-5539-4e4a-bc86-0d385b431b4b" />
+
+<img width="1214" height="605" alt="image" src="https://github.com/user-attachments/assets/c7ae2e9e-78ae-408f-810f-df5a6a76760e" />
+salida en el tiempo
+
+<img width="1210" height="586" alt="image" src="https://github.com/user-attachments/assets/849dd8be-f683-456c-93bf-e7cd9e7a0d83" />
+Señal de control
 
 ---
 
