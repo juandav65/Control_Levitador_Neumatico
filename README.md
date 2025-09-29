@@ -72,6 +72,7 @@ B = [ 0 ;
 - Se logró un buen desempeño en simulación, aunque en la planta física se requirió:  
   - Ajustar la ganancia global.  
   - Aplicar un **offset** de 5.16 V en la señal de control.  
+<img width="905" height="682" alt="image" src="https://github.com/user-attachments/assets/c84925c5-5539-4e4a-bc86-0d385b431b4b" />
 
 ---
 
