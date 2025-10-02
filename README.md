@@ -85,11 +85,11 @@ Señal de control
 ##  Implementación
 - El control fue implementado en la planta con una **ESP32** programada en el **IDE de Arduino**.  
 - Comunicación serial para cambios de referencia en tiempo real.  
--## PID
-  en el enlace: https://youtube.com/shorts/Yb6yQg3QmOs?feature=share se encuentra la implentacion del control PID.
+  PID
+  En el enlace: https://youtube.com/shorts/Yb6yQg3QmOs?feature=share se encuentra la implentacion del control PID.
 
--## H-inf
-  en el enlace: https://youtube.com/shorts/Yb6yQg3QmOs?feature=share se encuentra la implentacion del control Hinf, el cual al ser un control robusto permite un segumiento a pesar de las incertidumbres en el modelo de la planta. 
+  H-inf
+  En el enlace: https://youtube.com/shorts/Yb6yQg3QmOs?feature=share se encuentra la implentacion del control Hinf, el cual al ser un control robusto permite un segumiento a pesar de las incertidumbres en el modelo de la planta. 
 
 ---
 
