@@ -85,6 +85,7 @@ Señal de control
 
 ##  Implementación
 - El control fue implementado en la planta con una **ESP32** programada en el **IDE de Arduino**, haciendo uso de comunicación serial para cambios de referencia en tiempo real; El archivo "definitions.h" se encarga de la comunicacion entre la planta y el computador, ademas de la conversion a PWM que recibe el ventilador. El archivo "levitador_control_prop.ino" tiene los parametros de caracterizacion de la planta por tren de pulsos y las ganacias propias del control PID,  asi como la logica del sistema de control realimentado; y el archivo "Hinfinito.ino"   tiene los parametros de caracterizacion de la planta  por primeros principios y los filstros de sensibilidad, asi como la logica de control.
+- 
   PID:
   En el enlace: https://youtube.com/shorts/Yb6yQg3QmOs?feature=share se encuentra la implentacion del control PID.
 
