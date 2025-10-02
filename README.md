@@ -18,7 +18,8 @@ Este proyecto implementa el diseño, modelado y control de una planta experiment
 
 ##  Diseño y montaje de la planta
 - **Pistón**: diseñado para minimizar oscilaciones dentro del tubo y maximizar el área de contacto con el flujo de aire.  
-- **Tubo**: acrílico transparente de 20 mm de diámetro para visualizar el movimiento del pistón.  
+- **Tubo**: acrílico transparente de 20 mm de diámetro para visualizar el movimiento del pistón.
+  Los planos se encuentras en los archivos del repositorio.
 
 ---
 
